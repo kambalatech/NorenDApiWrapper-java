@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class NorenDRoutes {
     public Map<String, String> routes;
-    public static String _host = "http://rama.kambala.co.in:9990/DealerWClient/";
+    public static String _host = "https://rama.kambala.co.in/DealerWClient/";
     // Initialize all routes,
        public NorenDRoutes(){        
         routes = new HashMap<String, String>(){{
