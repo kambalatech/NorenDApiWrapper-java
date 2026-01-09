@@ -112,7 +112,7 @@ public class NorenDApiJava {
     public JSONObject place_order(String buy_or_sell,String product_type,String actid,
                     String exchange,String tradingsymbol,Integer quantity,Integer discloseqty,
                     String price_type,Double price,String remarks,Double trigger_price,
-                    String retention, String amo,Double bookloss_price,Double bookprofit_price,Double trail_price){
+                    String retention, String amo,Double bookloss_price,Double bookprofit_price,Double trail_price,Integer loc_id){
         String url = _api.routes.get("placeorder");
         JSONObject jsonObject = new JSONObject();
         
@@ -126,6 +126,7 @@ public class NorenDApiJava {
         jsonObject.put("qty"     ,Integer.toString(quantity));
         jsonObject.put("dscqty"  ,Integer.toString(discloseqty));
         jsonObject.put("prctyp"  ,price_type);
+        jsonObject.put("loc_id"  ,Integer.toString(loc_id));
         jsonObject.put("prc"     ,Double.toString(price));
         if(null != trigger_price)
             jsonObject.put("trgprc"  ,Double.toString(trigger_price));

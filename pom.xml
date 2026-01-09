@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.noren.javaapi</groupId>
     <artifactId>NorenDWrapperApi-java</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <dependencies>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
